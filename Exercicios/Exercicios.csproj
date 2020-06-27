@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Exercicios.Aula01.Desafio</StartupObject>
+    <StartupObject>Exercicios.Calculadora</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,10 +51,24 @@
     <Compile Include="Aula01\Questao6.cs" />
     <Compile Include="Aula01\Questao7.cs" />
     <Compile Include="Aula01\Questao8.cs" />
+    <Compile Include="Aula02\Bloco1\Questao1.cs" />
+    <Compile Include="Aula02\Bloco1\Questao2.cs" />
+    <Compile Include="Aula02\Bloco1\Questao3.cs" />
+    <Compile Include="Aula02\Bloco1\Questao4.cs" />
+    <Compile Include="Aula02\Bloco1\Questao5.cs" />
+    <Compile Include="Aula02\Bloco1\Questao6.cs" />
+    <Compile Include="Aula02\Bloco1\Questao7.cs" />
+    <Compile Include="Aula02\Bloco2\Questao1.cs" />
+    <Compile Include="Aula02\Bloco2\Questao2.cs" />
+    <Compile Include="Aula02\Bloco2\Questao3.cs" />
+    <Compile Include="Aula02\Bloco2\Questao4.cs" />
+    <Compile Include="Aula02\Bloco2\Questao5.cs" />
+    <Compile Include="Aula02\Desafio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
