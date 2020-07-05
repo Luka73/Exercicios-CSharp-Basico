@@ -21,22 +21,22 @@ namespace Exercicios.Aula03
 
             switch(operacao)
             {
-                case "+":
+                case "+" :
                     Console.WriteLine("Soma: " + (n1 + n2));
                     break;
-                case "-":
+                case "-" :
                     Console.WriteLine("Subtração: " + (n1 - n2));
                     break;
-                case "*":
+                case "*" :
                     Console.WriteLine("Multiplicação: " + (n1 * n2));
                     break;
-                case "/":
+                case "/" :
                     if(n2 != 0)
                         Console.WriteLine("Divisão: " + (n1 / n2));
                     else
                         Console.WriteLine("Não é possível efetuar divisão por zero.");
                     break;
-                default:
+                default :
                     Console.WriteLine("Operação inválida.");
                     break;
             }

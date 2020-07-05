@@ -11,7 +11,7 @@ namespace Exercicios.Aula03
         static void Main(string[] args)
         {
             Console.WriteLine("Escolha um combustível: ");
-            Console.WriteLine("A - Álcool");
+            Console.WriteLine("A - Álcool"); 
             Console.WriteLine("G - Gasolina");
             string combustivel = Console.ReadLine();
 
@@ -35,7 +35,7 @@ namespace Exercicios.Aula03
                     break;
             }
 
-            double precoFinal = preco * (1 - desconto);
+            double precoFinal = preco * (1 - desconto);  
             Console.WriteLine("Valor a pagar: " + precoFinal);
             Console.ReadKey();
         }
