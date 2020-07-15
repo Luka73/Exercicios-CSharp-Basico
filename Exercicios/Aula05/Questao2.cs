@@ -15,7 +15,8 @@ namespace Exercicios.Aula05
             int sum = 0;
             for (int i = 0; i < arr.Length; i++)
             {
-                sum = sum + arr[i];
+                if(arr[i] % 2 == 0)
+                    sum = sum + arr[i];
             }
 
             Console.WriteLine("Soma dos valores: " + sum);
