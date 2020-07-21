@@ -23,19 +23,19 @@ namespace Exercicios.Aula05
             Console.WriteLine(arr[1,1]);*/
 
             int count = 0;
-            for (int i = 0; i < arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++) //percorre as linhas
             {
-                for (int j = 0; j < arr.Length; j++)
+                for (int j = 0; j < arr.Length; j++) //percorre as colunas
                 {
-                    if (arr[i,j] > 10)
+                    if (arr[i,j] > 10) //i = 1, j = 1 --> arr[i,j] = 7
                     {
-                        count++;
+                        count++; //1
                     }
                 }
             }
 
             //Console.WriteLine(arr.Length);
-            Console.WriteLine("Valores maiores que 10: " + count);
+            Console.WriteLine("Valores maiores que 10: " + count); //1
             Console.ReadKey();
         }
     }
