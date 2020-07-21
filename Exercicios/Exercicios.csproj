@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Exercicios.Aula06.Desafio2</StartupObject>
+    <StartupObject>Exercicios.Aula06.Questao7</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

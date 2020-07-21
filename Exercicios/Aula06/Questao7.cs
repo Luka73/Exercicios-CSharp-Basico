@@ -10,45 +10,51 @@ namespace Exercicios.Aula06
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(PadLeft(3, '*', "3945"));
-            Console.WriteLine(PadRight(3, '*', "3945"));
-            /*Console.WriteLine(Padding(3, '*', "3945", 1));
-            Console.WriteLine(Padding(3, '*', "3945", -1));*/
+            Console.WriteLine(PadLeft(5, '0', "1")); //"00001"
+            Console.WriteLine(PadLeft(5, '0', "123")); //"00123"
+            Console.WriteLine(PadLeft(5, '0', "12345")); //"12345"
+            Console.WriteLine(PadRight(5, '0', "1")); //"10000"
+            Console.WriteLine(PadRight(5, '0', "123")); //"12300"
+            Console.WriteLine(PadRight(5, '0', "12345")); //"12345"
+            Console.WriteLine(Padding(5, '0', "1", true)); //"10000"
+            Console.WriteLine(Padding(5, '0', "1", false)); //"00001"
             Console.ReadKey();
         }
 
-        public static string PadLeft(int pad, char element, string text)
+        public static String PadLeft(int n, char element, String value)
         {
-            string newText = "";
-
-            for (int i = 1; i <= pad; i++)
+            String pad = "";
+            int fim = Math.Max(n, value.Length) - Math.Min(n, value.Length);
+            for (int i = 1; i <= fim; i++)
             {
-                newText += element;
+                pad += element;
             }
 
-            return newText + text;
+            return pad + value;
         }
 
-        public static string PadRight(int pad, char element, string text)
+        public static String PadRight(int n, char element, String value)
         {
-            string newText = "";
-
-            for (int i = 1; i <= pad; i++)
+            String pad = "";
+            int fim = Math.Max(n, value.Length) - Math.Min(n, value.Length);
+            for (int i = 1; i <= fim; i++)
             {
-                newText += element;
+                pad += element;
             }
 
-            return text + newText;
+            return value + pad;
         }
 
-        /*public static string Padding(int pad, char element, string text, int side) {
-            String newText = "";
-
-            for(int i = 1; i <= pad; i++) {
-                newText += element;
+        public static String Padding(int n, char element, String value, bool direita)
+        {
+            String pad = "";
+            int fim = Math.Max(n, value.Length) - Math.Min(n, value.Length);
+            for (int i = 1; i <= fim; i++)
+            {
+                pad += element;
             }
 
-            return (side >= 0) ? text+newText : newText+text;
-        }*/
+            return (direita) ? value + pad : pad + value;
+        }
     }
 }
